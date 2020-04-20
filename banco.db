@@ -1,0 +1,10 @@
+create database kotlindemo
+
+use kotlindemo
+
+create table todo(
+    id int not null AUTO_INCREMENT primary key, 
+    text varchar(500),
+    created_at datetime default now(), 
+    done boolean default FALSE
+    );
